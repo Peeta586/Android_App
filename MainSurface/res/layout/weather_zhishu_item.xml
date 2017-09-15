@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="2.0dip" android:src="@drawable/zs_ic_chenlian" />
+    <ImageView android:background="@drawable/zs_timeline" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_weather_index" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white_a5" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_title" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="空气污染扩散条件" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[良]" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_content" android:background="@drawable/zs_item_bg" android:paddingLeft="10.0dp" android:paddingTop="14.0dp" android:paddingRight="10.0dip" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="气象条件良好" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

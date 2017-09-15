@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical"  android:id="@+id/temperature_mainLayout" android:paddingLeft="5.0dp" android:paddingTop="10.0dp" android:paddingRight="5.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear_today" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/tv_today_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日" android:singleLine="true" />
+                <ImageView android:id="@+id/img_today_m" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_weather_tod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear_tomo" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/tv_tomo_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                <ImageView android:id="@+id/img_tomo_m" android:layout_width="36.0dip" android:layout_height="36.0dp" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_weather_tomo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearafter" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/tv_after_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                <ImageView android:id="@+id/img_after_m" android:layout_width="36.0dp" android:layout_height="36.0dip" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_weather_after" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearforth" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/tv_forth_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                <ImageView android:id="@+id/img_forth_m" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/weather_no" android:baselineAlignBottom="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_weather_forth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/lineartemp_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/lineartoday_n" android:layout_below="@id/relativeLayout2">
+           
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineartoday_n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@+id/img_today_n" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_today_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lineartomo_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@+id/img_tomo_n" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_tomo_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearafter_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@+id/img_after_n" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_after_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearforth_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@+id/img_forth_n" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/weather_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@+id/tv_forth_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:singleLine="true" />
+            </LinearLayout>
+            
+        </LinearLayout>
+  </RelativeLayout>

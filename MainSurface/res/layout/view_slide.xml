@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView android:textSize="14.0sp" android:textColor="#77ffffff" android:id="@+id/getup_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_unlock" android:layout_centerInParent="true" />
+    <ImageView android:id="@+id/getup_arrow" android:background="@anim/slider_tip_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/getup_hint" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/slider_layout" android:background="@drawable/slide_bottom_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:id="@+id/slider_icon" android:background="@drawable/slide_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+   </RelativeLayout>
+        <!--  /cn.etouch.ecalendar.service.SliderRelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:paddingTop="@dimen/week_tab_height"
+    android:paddingBottom="@dimen/week_y_w_t_h">
+	
+	<LinearLayout android:id="@+id/Sunday_linear" android:baselineAligned="false" style="@style/week_linearStyle_top" >
+	    <LinearLayout android:id="@+id/Sunday_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    <TextView android:id="@+id/tv_week_Sun" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Sunday" />
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Sunfortime" style="@style/Sun_Sat_week_text_time"/>
+	            <TextView android:id="@+id/SunforFestival" style="@style/week_festival_text" android:layout_below="@id/Sunfortime" />
+	            <TextView android:id="@+id/Sun_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/SunforFestival" android:layout_below="@id/Sunfortime"/>
+	        </RelativeLayout>
+	    </LinearLayout>
+	     <LinearLayout android:id="@+id/Sun_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+	            
+	     </LinearLayout>
+	    
+	</LinearLayout>
+	<LinearLayout android:id="@+id/Monday_linear" android:baselineAligned="false" style="@style/week_linearStyle_med" >
+	    <LinearLayout android:id="@+id/Monday_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    <TextView android:id="@+id/tv_week_Mon" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Monday" />
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Monfortime" style="@style/five_week_text_time"/>
+	            <TextView android:id="@+id/MonforFestival" style="@style/week_festival_text" android:layout_below="@id/Monfortime"/>
+	            <TextView android:id="@+id/Mon_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/MonforFestival" android:layout_below="@id/Monfortime"/>
+	        </RelativeLayout>
+	     </LinearLayout>
+        <LinearLayout android:id="@+id/Mon_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+            
+        </LinearLayout>
+	    
+	</LinearLayout>
+	<LinearLayout android:id="@+id/Tuesday_linear" android:baselineAligned="false"  style="@style/week_linearStyle_med" >
+	    <LinearLayout android:id="@+id/Tuesday_content"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    <TextView android:id="@+id/tv_week_Tue" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Tuesday"  />
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Tuesfortime" style="@style/five_week_text_time"/>
+	            <TextView android:id="@+id/TuesforFestival" style="@style/week_festival_text" android:layout_below="@id/Tuesfortime" />
+	            <TextView android:id="@+id/Tues_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/TuesforFestival" android:layout_below="@id/Tuesfortime"/>
+	        </RelativeLayout>
+	    </LinearLayout>
+        <LinearLayout android:id="@+id/Tues_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+            
+        </LinearLayout>
+	   
+	</LinearLayout>
+	<LinearLayout android:id="@+id/Wednesday_linear" android:baselineAligned="false" style="@style/week_linearStyle_med" >
+	     <LinearLayout android:id="@+id/Wednesday_content"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    	<TextView android:id="@+id/tv_week_Wed" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Wednesday" />
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Wednesfortime" style="@style/five_week_text_time"/>
+	            <TextView android:id="@+id/WednesforFestival" style="@style/week_festival_text" android:layout_below="@id/Wednesfortime"/>
+	            <TextView android:id="@+id/Wednes_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/WednesforFestival" android:layout_below="@id/Wednesfortime"/>
+	        </RelativeLayout>
+	     </LinearLayout>
+        <LinearLayout android:id="@+id/Wednes_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+            
+        </LinearLayout>
+	    
+	</LinearLayout>
+	<LinearLayout android:id="@+id/Thursday_linear" android:baselineAligned="false" style="@style/week_linearStyle_med" >
+	    <LinearLayout android:id="@+id/Thursday_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    <TextView android:id="@+id/tv_week_Thu" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Thursday" />
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Thursfortime" style="@style/five_week_text_time"/>
+	            <TextView android:id="@+id/ThursforFestival" style="@style/week_festival_text" android:layout_below="@id/Thursfortime"/>
+	            <TextView android:id="@+id/Thurs_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/ThursforFestival" android:layout_below="@id/Thursfortime"/>
+	        </RelativeLayout>
+	     </LinearLayout>
+        <LinearLayout android:id="@+id/Thurs_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+            
+        </LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/Friday_linear" android:baselineAligned="false" style="@style/week_linearStyle_med">
+	    <LinearLayout android:id="@+id/Friday_content"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    <TextView android:id="@+id/tv_week_Fri" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Friday" />
+	    
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Frifortime" style="@style/five_week_text_time"/>
+	            <TextView android:id="@+id/FriforFestival" style="@style/week_festival_text" android:layout_below="@id/Frifortime"/>
+	            <TextView android:id="@+id/Fri_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/FriforFestival" android:layout_below="@id/Frifortime"/>
+	        </RelativeLayout>
+	   </LinearLayout>
+	        <LinearLayout android:id="@+id/Fri_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+	            
+	        </LinearLayout>
+	   
+	</LinearLayout>
+	<LinearLayout android:id="@+id/Saturday_linear" android:baselineAligned="false" style="@style/week_linearStyle_med" >
+	     <LinearLayout android:id="@+id/Saturday_content"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+	    	<TextView android:id="@+id/tv_week_Sat" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/week_TagStyle" android:text="@string/Saturday" />
+	   
+	        <RelativeLayout android:layout_width="0dip" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+	            <TextView android:id="@+id/Saturfortime" style="@style/Sun_Sat_week_text_time"/>
+	            <TextView android:id="@+id/SaturforFestival" style="@style/week_festival_text" android:layout_below="@id/Saturfortime"/>
+	            <TextView android:id="@+id/Satur_numsch" style="@style/week_sch_text" android:layout_toLeftOf="@id/SaturforFestival" android:layout_below="@id/Saturfortime"/>
+	        </RelativeLayout>
+	      </LinearLayout>
+        <LinearLayout android:id="@+id/Satur_schdule_show" android:layout_weight="1" android:layout_width="0dip" android:layout_height="match_parent" android:orientation="vertical">
+            
+        </LinearLayout>
+	   
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/week_control_linear" style="@style/week_linearStyle_bottom" android:descendantFocusability="afterDescendants">
+	    <Button android:id="@+id/pre_week_btn_1" style="@style/preweekButton" />
+	    <Button  android:id="@+id/now_week_btn" style="@style/nowweekButton" />
+	    <Button android:id="@+id/next_week_btn" style="@style/nextweekButton"/>
+	</RelativeLayout>
+</LinearLayout>

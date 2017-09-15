@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/main_tab_height" android:gravity="center" android:background="@color/red">
+        <TextView android:layout_gravity="center" android:gravity="center" android:textSize="24sp" android:textColor="@color/white" android:layout_width="wrap_content" android:text="@string/tab_more" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dip" android:layout_weight="1.0">
+        <GridView android:id="@+id/setting_gridview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:numColumns="3" />
+    </LinearLayout>
+
+</LinearLayout>
+

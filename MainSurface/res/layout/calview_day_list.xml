@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/week_tab_height" 
+    android:paddingBottom="@dimen/week_y_w_t_h">
+       <LinearLayout android:baselineAligned="false" style="@style/day_linearStyle_top" android:id="@+id/day_Inf"  >
+         <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_dateArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="-2.0dip">
+        <TextView android:textSize="30.0dip" android:textColor="@color/black" android:id="@+id/tv_nongli_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="十二" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/grey" android:gravity="center" android:id="@+id/tv_nongli_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="壬辰龙年十月" />
+	    </LinearLayout>
+	    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dip" android:layout_height="match_parent" android:layout_weight="1.0" >
+	        <TextView android:textSize="11.0dip" android:textColor="@color/grey" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_nongli_yi" android:paddingLeft="8.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" android:singleLine="true" android:drawableLeft="@drawable/huangli_yi" android:drawablePadding="4.0dip" />
+	        <TextView android:textSize="11.0dip" android:textColor="@color/grey" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_nongli_ji" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" android:singleLine="true" android:drawableLeft="@drawable/huangli_ji" android:drawablePadding="4.0dip"  />
+	    </LinearLayout>
+           
+       </LinearLayout>
+       <ScrollView style="@style/day_linearStyle_med"  android:background="@drawable/countdown_banner_bg">
+     	<LinearLayout android:id="@+id/day_timespace" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5" android:orientation="vertical" >
+           <LinearLayout style="@style/day_linear_schedule_5">
+              <TextView style="@style/day_schedule_tv" android:text="@string/quantian"/> 
+             <LinearLayout style="@style/day_schedule_content"  >
+              <LinearLayout android:id="@+id/quan_sched_linear" style="@style/day_schedule_content_5" >
+                  <View style="@style/day_schedule_divider1"/>
+              </LinearLayout>
+              <LinearLayout android:id="@+id/quan_sched_linear1" style="@style/day_schedule_content1" android:orientation="vertical" >
+                  
+              </LinearLayout>
+              </LinearLayout>
+           </LinearLayout>
+           <View style="@style/day_schedule_divider"/>
+           <LinearLayout style="@style/day_linear_schedule_5">
+               <TextView style="@style/day_schedule_tv" android:text="@string/lingchen"/> 
+               <LinearLayout style="@style/day_schedule_content">
+          		<LinearLayout android:id="@+id/lingchen_sched_linear" style="@style/day_schedule_content_5" >
+                  	<View style="@style/day_schedule_divider1"/>
+              	</LinearLayout>
+              	<LinearLayout android:id="@+id/lingchen_sched_linear1" style="@style/day_schedule_content1" android:orientation="vertical" >
+                  
+              	</LinearLayout>
+              </LinearLayout>
+           </LinearLayout>
+           <View style="@style/day_schedule_divider"/>
+           <LinearLayout style="@style/day_linear_schedule_5">
+               <TextView style="@style/day_schedule_tv" android:text="@string/shangwu"/> 
+               <LinearLayout style="@style/day_schedule_content">
+           		<LinearLayout android:id="@+id/shangwu_sched_linear"  style="@style/day_schedule_content_5" >
+                  <View style="@style/day_schedule_divider1"/>
+              	</LinearLayout>
+              	<LinearLayout android:id="@+id/shangwu_sched_linear1"  style="@style/day_schedule_content1" android:orientation="vertical" >
+                  
+              	</LinearLayout>
+              	</LinearLayout>
+           </LinearLayout>
+           <View style="@style/day_schedule_divider"/>
+           
+           <LinearLayout style="@style/day_linear_schedule_5">
+               <TextView style="@style/day_schedule_tv" android:text="@string/xiawu"/> 
+               <LinearLayout style="@style/day_schedule_content">
+           		<LinearLayout android:id="@+id/xianwu_sched_linear" style="@style/day_schedule_content_5" >
+                  <View style="@style/day_schedule_divider1"/>
+              </LinearLayout>
+              <LinearLayout android:id="@+id/xianwu_sched_linear1" style="@style/day_schedule_content1" android:orientation="vertical" >
+                  
+              </LinearLayout>
+              </LinearLayout>
+           </LinearLayout>
+           <View style="@style/day_schedule_divider"/>
+           <LinearLayout style="@style/day_linear_schedule_5">
+               <TextView  style="@style/day_schedule_tv" android:text="@string/night" /> 
+               <LinearLayout style="@style/day_schedule_content">
+           		<LinearLayout android:id="@+id/night_sched_linear" style="@style/day_schedule_content_5" >
+                  <View style="@style/day_schedule_divider1"/>
+              </LinearLayout>
+              <LinearLayout android:id="@+id/night_sched_linear1" style="@style/day_schedule_content1" android:orientation="vertical" >
+                  
+              </LinearLayout>
+              </LinearLayout>
+           </LinearLayout>
+          <View style="@style/day_schedule_divider"/>
+       </LinearLayout>
+       </ScrollView>
+       <RelativeLayout android:id="@+id/controll_day" style="@style/day_linearStyle_bottom" >
+           <Button android:id="@+id/pre_day_btn" style="@style/predayButton"/>
+    	<Button  android:id="@+id/today_day_btn" style="@style/todayButton" />
+    	<Button android:id="@+id/next_day_btn" style="@style/nextdayButton"/>
+       </RelativeLayout>
+	
+</LinearLayout>

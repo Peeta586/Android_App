@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/calendar_bg_2"
+    android:layout_marginLeft="10dip"
+    android:layout_marginTop="30dip"
+    android:layout_marginRight="10.0dip"
+    android:layout_marginBottom="5dip" >
+    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="24sp" android:text="健康小贴士"/>
+    
+
+</LinearLayout>

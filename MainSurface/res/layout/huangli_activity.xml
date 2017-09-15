@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" >
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/huanli_titleInf"  android:padding="0.0dip" android:layout_width="match_parent" android:layout_height="@dimen/main_tab_height" style="@style/navbar_style" android:layout_gravity="top">
+ <RelativeLayout android:layout_alignParentLeft="true" android:gravity="center" android:orientation="vertical" android:id="@+id/huang_DateTimeInfo" android:background="@drawable/selector_list_bg" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="match_parent" android:focusable="true" >
+       <TextView android:gravity="center" android:id="@+id/huangli_titile_hl_ym" android:layout_width="wrap_content" android:layout_height="26.0dip" android:text="2012.05.20" style="@style/title_small_ym"  />
+      <ImageView
+          android:id="@+id/huangli_arrow_down" android:layout_width="wrap_content"  android:layout_height="wrap_content"
+          android:layout_marginTop="22.0dip" android:layout_toRightOf="@id/huangli_titile_hl_ym" android:src="@drawable/ic_arrow_down" />
+  </RelativeLayout>
+  <Button android:id="@+id/share" style="@style/shareButton" />  
+</RelativeLayout>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center_horizontal" android:background="@color/white">
+<RelativeLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="@color/white">
+    <LinearLayout  android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:id="@+id/huangli_nianImg" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:gravity="center" >
+        <ImageView android:id="@+id/Img_nian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center|left" android:layout_marginRight="10dp" android:src="@drawable/a01" />
+        <ImageView android:id="@+id/Img_niantext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center|right" android:layout_marginLeft="10dp" android:src="@drawable/b01" />
+    </LinearLayout>
+    <View android:id="@+id/huangli_divider" style="@style/huangli_item_divider" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@id/huangli_nianImg" />
+
+	<RelativeLayout android:id="@+id/huangli_nian" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/huangli_divider" >
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/gtime_week" android:background="@drawable/almanac_week_bg" android:paddingTop="8.0dp" android:paddingBottom="8.0dip" android:layout_width="25.0dp" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="星期三" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/gtime_week" android:layout_alignBottom="@id/gtime_week">
+                <ImageView android:id="@+id/lunar1" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                <ImageView android:id="@+id/lunar2" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                <ImageView android:id="@+id/lunar3" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                <ImageView android:id="@+id/lunar4" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/almanac_text1" android:gravity="center_vertical" android:id="@+id/tv_weeknum" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:text="第8周" android:layout_below="@id/gtime_week" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/almanac_text1" android:gravity="center_vertical" android:id="@+id/ntime" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="甲午马年丙寅月丙辰日" android:layout_below="@id/gtime_week" android:layout_centerHorizontal="true" />
+     </RelativeLayout>
+     <View android:id="@+id/huangli_divider1" style="@style/huangli_item_divider" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@id/huangli_nian" />
+     <LinearLayout android:id="@+id/decr_festiv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/huangli_divider1" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip">
+         <TextView android:id="@+id/tv_huangli_decri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="@color/almanac_text1"/>
+         <TextView android:id="@+id/tv_huangli_festival" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="@color/almanac_text1"/>
+     </LinearLayout>
+     <View android:id="@+id/huangli_divider2" style="@style/huangli_item_divider" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@id/decr_festiv" />
+ 	 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_yi" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/huangli_divider2">
+            <ImageView android:id="@+id/img_yi" android:background="@drawable/huangli_yi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/almanac_text1" android:gravity="center_vertical" android:id="@+id/tx_yi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/img_yi" android:layout_alignTop="@id/img_yi" />
+     </LinearLayout>
+     <LinearLayout android:id="@+id/ll_ji" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_yi">
+         <ImageView android:id="@+id/img_ji" android:background="@drawable/huangli_ji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/img_yi" />
+         <TextView android:textSize="13.0sp" android:textColor="@color/almanac_text1" android:gravity="center_vertical" android:id="@+id/tx_ji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/img_ji" android:layout_alignTop="@id/img_ji" />
+     </LinearLayout>
+
+     <FrameLayout android:gravity="center" android:id="@+id/huangli_bagua" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_ji">
+         <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divine_bg"  />
+         <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divine_bagua" />
+     </FrameLayout>
+     <FrameLayout android:gravity="center" android:id="@+id/huangli_compass" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/huangli_bagua">
+         <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compass_bg"  />
+         <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compass_pointer" />
+     </FrameLayout>
+ </RelativeLayout>
+ </ScrollView>
+</LinearLayout>

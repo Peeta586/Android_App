@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tenpay_paycenter_pro_bg" >
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/main_tab_height" android:orientation="horizontal" android:background="@color/songse" >
+       <Button android:id="@+id/dream_Back" android:layout_width="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="5dp" android:layout_marginLeft="10dp" android:layout_height="wrap_content" android:background="@drawable/qzone_navbar_btn_back_sel" android:textColor="@color/set_back_sel" android:text="@string/back"/> 
+       <TextView android:text="@string/dream" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textSize="24sp"/>
+    </RelativeLayout>
+  <ListView android:id="@+id/dream_list" android:layout_width="match_parent" android:layout_weight="1.0" android:layout_height="match_parent"
+      android:dividerHeight="0dip" android:scrollbarSize="1.0dp"></ListView>  
+ <View android:layout_width="match_parent" android:layout_height="1.0dp" android:background="@color/songse"/>
+ <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+ <TextView android:id="@+id/dream_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dp"/>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost  android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="55.0dip" android:background="@drawable/fortune_tabs_left" >
+            
+        </TabWidget>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+            <com.example.Constellation.ScrollableViewGroup android:id="@+id/today_fliper" android:layout_width="match_parent" android:layout_height="match_parent"></com.example.Constellation.ScrollableViewGroup>
+            <com.example.Constellation.ScrollableViewGroup android:id="@+id/tommo_fliper" android:layout_width="match_parent" android:layout_height="match_parent"></com.example.Constellation.ScrollableViewGroup>
+            <com.example.Constellation.ScrollableViewGroup android:id="@+id/week_fliper" android:layout_width="match_parent" android:layout_height="match_parent"></com.example.Constellation.ScrollableViewGroup>
+        </FrameLayout>
+        
+    </LinearLayout>
+</TabHost>

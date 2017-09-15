@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:id="@+id/sv_root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbars="none">
+        <RelativeLayout android:id="@+id/layout_root" android:minHeight="230.0dip" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#aaffffff" android:id="@+id/tv_refreshtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_marginTop="5dp" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_alignParentLeft="false"/>
+                
+                <LinearLayout android:id="@+id/weather_temp"  android:orientation="horizontal" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_margin="5dp" android:layout_below="@id/tv_refreshtime">
+                    <LinearLayout android:orientation="vertical" android:layout_marginLeft="10dp" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        
+                        <LinearLayout android:background="@drawable/ad_bg_rounded" android:id="@+id/layout_weather_alarm" android:visibility="gone" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:id="@+id/iv_alarm" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/weather_ic_alert" android:scaleType="centerInside" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/tv_weather_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="霾黄色预警" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/tv_fengli_d" android:layout_gravity="center|left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="风力/风向：" android:textSize="20sp" android:textColor="@color/white"/>
+                    </LinearLayout>
+                   <TextView android:textSize="100.0dip" android:textColor="@color/white" android:gravity="left|center" android:id="@+id/tv_nowtemperature" android:layout_width="wrap_content" android:layout_height="110.0dip" android:text="23" android:singleLine="true" />
+                    
+                </LinearLayout>
+                
+                <LinearLayout android:layout_margin="5dp" android:id="@+id/weather_today" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_below="@id/weather_temp" android:background="@drawable/countdown_banner_bg">
+                	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/white" android:layout_weight="1.0" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="24sp" android:text="@string/today_weather_situ" />
+                        <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/white" android:layout_weight="1.0" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+                    </LinearLayout>
+                <LinearLayout  android:layout_width="match_parent" android:layout_height="100dp" android:orientation="horizontal" android:weightSum="1"  >
+                   <ImageView android:id="@+id/today_w_icon1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.3" android:layout_gravity="left"  android:src="@drawable/weather_mostlycloudy" android:contentDescription="@string/app_name"/>
+                  <ImageView android:id="@+id/icon_w_arrow" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.4" android:layout_gravity="center" android:src="@drawable/arrow_right" android:contentDescription="@string/app_name"/>
+                   <ImageView android:id="@+id/today_w_icon2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.3" android:layout_gravity="right" android:src="@drawable/weather_mostlycloudy" android:contentDescription="@string/app_name"/>
+               </LinearLayout>
+               <TextView android:id="@+id/today_weather_qing" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="22.0sp" android:textColor="@color/white" android:gravity="center"  android:text="@string/weather_today"/>
+               </LinearLayout>
+              
+                <LinearLayout android:background="@drawable/countdown_banner_bg" android:layout_margin="5dp" android:orientation="vertical" android:id="@+id/layout_righttop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_below="@id/weather_today">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/white" android:layout_weight="1.0" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="24sp" android:text="@string/today_situation" />
+                        <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/white" android:layout_weight="1.0" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left"  android:layout_width="wrap_content"  android:text="@string/temprature" android:drawableLeft="@drawable/ic_weather_temp"  />
+                    <TextView style="@style/weather_curview_text" android:id="@+id/tv_hightodaytemperature" android:layout_width="wrap_content" android:text="@string/temperature_str"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left" android:layout_width="wrap_content" android:text="@string/fengli"  android:drawableLeft="@drawable/ic_weather_wind"  />
+                   	<TextView  android:id="@+id/tv_fl" style="@style/fengli_text_marquee" android:text="@string/fengli_str"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left"  android:layout_width="130.0dip"  android:text="@string/shidu" android:drawableLeft="@drawable/ic_weather_wet"  />
+                    <TextView style="@style/weather_curview_text"  android:id="@+id/tv_shidu" android:layout_width="wrap_content"  android:text="@string/shidu_str"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left"   android:layout_width="wrap_content"   android:text="@string/ziwaipower" android:drawableLeft="@drawable/ic_weather_sun"  />
+                	<TextView style="@style/weather_curview_text"  android:id="@+id/tv_ziwaiqing" android:layout_width="wrap_content"  android:text="@string/Quality"/>
+                	</LinearLayout>
+                	<LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left"   android:layout_width="wrap_content"   android:text="@string/kongqiQuality" android:drawableLeft="@drawable/ic_weather_sun"/>
+                	<TextView style="@style/weather_curview_text"  android:id="@+id/tv_kongqi" android:layout_width="wrap_content" android:text="@string/Quality"/>
+                	</LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/countdown_banner_bg" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:id="@+id/future_fengli" android:layout_below="@id/layout_righttop" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/white" android:layout_weight="1.0" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="24sp" android:text="@string/future_fengli" />
+                        <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/white" android:layout_weight="1.0" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left" android:singleLine="true" android:layout_width="wrap_content" android:text="@string/first_fengli" android:drawableLeft="@drawable/ic_weather_wind"  />
+                    <TextView style="@style/fengli_text_marquee"  android:id="@+id/first_fengli" android:text="@string/fengli_str"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left"  android:singleLine="true" android:layout_width="wrap_content" android:text="@string/second_fengli" android:drawableLeft="@drawable/ic_weather_wind"  />
+                	<TextView style="@style/fengli_text_marquee"  android:id="@+id/second_fengli"  android:text="@string/fengli_str"/>
+                	</LinearLayout>
+                	<LinearLayout style="@style/weather_curview_linear">
+                    <TextView style="@style/weather_curview_text_left" android:singleLine="true" android:layout_width="wrap_content" android:text="@string/third_fengli" android:drawableLeft="@drawable/ic_weather_wind"/>
+                	<TextView style="@style/fengli_text_marquee"  android:id="@+id/third_fengli"  android:text="@string/fengli_str"/>
+                	</LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="right" android:id="@+id/tv_citycount" android:background="@drawable/ad_bg_rounded" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="1/1" />
+            
+        </RelativeLayout>
+
+</ScrollView>

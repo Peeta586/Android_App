@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="mytheme"  parent="android:Theme" >
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	<style name="main_tab_button_style">
+        <item name="android:textSize">10.0dp</item>
+        <item name="android:textColor">@color/tab_text_color_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/tab_selector</item>
+        <item name="android:paddingTop">2.0dp</item>
+        <item name="android:paddingBottom">1.0dp</item>
+        <item name="android:layout_width">0.0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">-2.0dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    
+	<style name="nav_fun_style">
+        <item name="android:background">@drawable/selector_list_bg</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:focusable">false</item>
+    </style>
+  	<style name="main_menu_item_divider">
+        <item name="android:background">#33ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5.0px</item>
+    </style>
+    <style name="huangli_item_divider">
+        <item name="android:background">@color/almanac_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2.0px</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="main_menu_divider_horizontal">
+        <item name="android:background">#33ffffff</item>
+        <item name="android:layout_width">5.0px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="day_schedule_divider1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/greyc</item>
+    </style>
+    <style name="day_schedule_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+   <style name="title_small_ym">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:shadowColor">#55000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+	<style name="navbar_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/top_nav_1_bg</item>
+    </style>
+    <style name="activity_navbar_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/green</item>
+    </style>
+    
+	<style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_details_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+	<style name="nav_text_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#55000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    
+	<style name="button_nav_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_trans</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+    </style>
+    
+	<style name="button_1_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+     <style name="button_2_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_2</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+    
+     <style name="titleButton">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/btn_text_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_icontext_selector</item>
+        <item name="android:paddingLeft">11.0dp</item>
+        <item name="android:paddingRight">11.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">33.0dp</item>
+        <item name="android:drawablePadding">3.0dp</item>
+    </style>
+     <style name="leftButton" parent="@style/titleButton">
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_marginLeft">5.0dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="rightButton" parent="@style/titleButton">
+        <item name="android:layout_gravity">right|center</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="title_shadow_style">
+        <item name="android:shadowColor">#ee000000</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="titleText_w" parent="@style/title_shadow_style">
+        <item name="android:textSize">@dimen/toolsize</item>
+        <item name="android:textColor">@color/tool_text_w</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+     <style name="backButton" parent="@style/leftButton">
+        <item name="android:text">@string/back</item>
+        <item name="android:drawableLeft">@drawable/button_back_selector</item>
+    </style>
+	<style name="finishButton" parent="@style/rightButton">
+        <item name="android:text">@string/finish_text</item>
+        <item name="android:width">72.0dip</item>
+    </style>
+    <style name="preweekButton" parent="@style/leftButton">
+        <item name="android:text">@string/PreWeek</item>
+        <item name="android:drawableLeft">@drawable/button_preweek_selector</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="nextweekButton" parent="@style/rightButton">
+        <item name="android:text">@string/NextWeek</item>
+        <item name="android:drawableLeft">@drawable/button_nextweek_selector</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="predayButton" parent="@style/leftButton">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:text">@string/PreDay</item>
+        <item name="android:drawableLeft">@drawable/button_preweek_selector</item>
+    </style>
+     <style name="nextdayButton" parent="@style/rightButton">
+         <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:text">@string/NextDay</item>
+        <item name="android:drawableLeft">@drawable/button_nextweek_selector</item>
+    </style>
+    <style name="todayBtn" parent="@style/titleButton">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        
+    </style>
+    <style name="todayButton" parent="@style/todayBtn">
+        <item name="android:text">@string/Today</item>
+    </style>
+    <style name="nowweekButton" parent="@style/todayBtn">
+        <item name="android:text">@string/NowWeek</item>
+    </style>
+    <style name="nowmonthButton" parent="@style/todayBtn">
+        <item name="android:text">@string/NowMonth</item>
+    </style>
+    
+    <style name="premonthButton" parent="@style/leftButton">
+        <item name="android:text">@string/PreMonth</item>
+        <item name="android:drawableLeft">@drawable/button_preweek_selector</item>
+    </style>
+    <style name="nextmonthButton" parent="@style/rightButton">
+        <item name="android:text">@string/NextMonth</item>
+        <item name="android:drawableLeft">@drawable/button_nextweek_selector</item>
+    </style>
+    <style name="editButton" parent="@style/rightButton">
+        <item name="android:text">@string/edit_task</item>
+        <item name="android:drawableLeft">@drawable/list_city_edit</item>
+    </style>
+
+    <style name="white_style_bk" >
+        <item name="android:background">@drawable/new_style_bk_w</item>
+        <item name="android:paddingBottom">7.0dp</item>
+        <item name="android:layout_marginLeft">3.0dp</item>
+        <item name="android:layout_marginRight">3.0dp</item>
+        <item name="android:layout_marginBottom">4.0dp</item>
+        <item name="android:layout_gravity">top|left|center</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="addScheduleEditText" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/calendar_rounded</item>
+        
+    </style>
+    <style name="addScheduleLine" >
+        <item name="android:background">@color/schedule_add_schline</item>
+    </style>
+    <style name="shareButton" parent="@style/rightButton">
+        <item name="android:text">@string/sns_share_text</item>
+        <item name="android:drawableLeft">@drawable/button_share_selector</item>
+    </style>
+    <style name="week_TagStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/guapan1</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- countdown_banner_bg -->
+    <style name="week_linearStyle">
+        <item name="android:background">@drawable/selector_week_list_bg</item>
+		<item name="android:padding">1dp</item>
+		<item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- @dimen/week_tab_height   @dimen/week_y_w_t_h-->
+    <style name="week_linearStyle_top" parent="@style/week_linearStyle">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="week_linearStyle_bottom" parent="@style/week_linearStyle">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="week_linearStyle_med" parent="@style/week_linearStyle">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="day_linearStyle_top" parent="@style/week_linearStyle">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="day_linearStyle_med" parent="@style/week_linearStyle">
+        <item name="android:clickable">false</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    <style name="day_linearStyle_bottom" parent="@style/week_linearStyle">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="day_linear_schedule_5">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        
+    </style>
+	<style name="day_schedule_content">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="day_schedule_content_5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/selector_list_bg</item>
+        <item name="android:gravity">center</item>
+        
+    </style>
+    <style name="day_schedule_content1">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+    </style>
+    <style name="day_schedule_tv">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="week_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Sun_Sat_week_text_time" parent="week_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/week_time_bg</item>
+        <item name="android:text">4月23日</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="five_week_text_time" parent="week_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:text">4月23日</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/week_time_bg</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="week_festival_text" parent="week_text">
+        <item name="android:text">父亲节</item>
+        <item name="android:background">@drawable/alarm_week_sel</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="week_sch_text" parent="week_text">
+         <item name="android:visibility">gone</item>
+        <item name="android:text">有n个日程</item>
+        <item name="android:background">@drawable/alarm_week_sel</item>
+        <item name="android:textColor">@color/white</item>
+        
+    </style>
+    <style name="weather_curview_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="weather_curview_text_left" parent="@style/weather_curview_text">
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:paddingLeft">4dip</item>
+    </style>
+
+    <style name="fengli_text_marquee" parent="weather_curview_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="weather_curview_linear">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="addScheduleAddTime">
+    	<item name="android:textColor">@color/schedule_white_titlename_color</item>
+        <item name="android:drawableLeft">@drawable/calendar_addsch_clock2</item>
+    </style>
+    <style name="addScheduleOpen">
+         <item name="android:background">@drawable/calendar_addopen2</item>
+    </style>
+    <style name="addScheduleTx">
+        <item name="android:textColor">@color/schedule_add_orange</item>
+    </style>
+    <style name="scheduleremind">
+        <item name="android:textColor">@color/schedule_white_titlename_color</item>
+        <item name="android:drawableLeft">@drawable/calendar_addsch_remind2</item>
+    </style>
+    <style name="schedulerepeat">
+        <item name="android:textColor">@color/schedule_white_titlename_color</item>
+        <item name="android:drawableLeft">@drawable/calendar_addsch_repeat2</item>
+    </style>
+    <style name="editScheduleLine">
+        <item name="android:background">@color/schedule_add_schline</item>
+    </style>
+    <style name="pop_window_btnsize">
+        <item name="android:layout_width">63.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="button_3_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_3</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+    <style name="window_content_style">
+        <item name="android:layout_gravity">top|left|center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/toolbarsize</item>
+    </style>
+    <style name="edit_white_style_bk" parent="@style/window_content_style">
+        <item name="android:background">@drawable/new_style_bk_w</item>
+        <item name="android:paddingBottom">7.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="EditScheduleLine">
+        <item name="android:background">@color/schedule_add_schline</item>
+    </style>
+    <style name="Schedulecheckbox">
+        <item name="android:button">@drawable/selector_btncheckmenu2</item>
+    </style>
+    <style name="EditScheduleEditContent" >
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="dottedLine" >
+        <item name="android:background">@drawable/dotted_line</item>
+    </style>
+    <style name="dialog_tv_style">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="B4_Font_white">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray_item</item>
+    </style>
+    <style name="K2_Font_white">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_gray3_item</item>
+    </style>
+    
+    <style name="table_weekend">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#66ff0000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="table_workday">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#66000000</item>
+    	<item name="android:textStyle">bold</item>
+    </style>
+    <style name="grey_mid">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff888888</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="dropdown_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff755800</item>
+        <item name="android:background">@drawable/selector_dropdown</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+    <style name="title_big_orange">
+        <item name="android:textSize">30.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffff7700</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.1</item>
+    </style>
+    
+</resources>

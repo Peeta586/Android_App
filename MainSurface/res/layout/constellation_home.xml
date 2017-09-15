@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout  android:orientation="vertical"  android:background="@color/mc_bottom_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="0,2,4" android:shrinkColumns="0,2,4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow  android:descendantFocusability="blocksDescendants" android:gravity="center" android:background="@color/yellow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+    </TableRow>
+    <ImageView android:background="@drawable/repeat_im6" android:layout_width="fill_parent" android:layout_height="2.0dip" android:contentDescription="@null"/>
+    <TableRow android:descendantFocusability="blocksDescendants" android:gravity="center" android:background="@color/yellow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+    </TableRow>
+    <ImageView android:background="@drawable/repeat_im6" android:layout_width="fill_parent" android:layout_height="2.0dip" android:contentDescription="@null"/>
+    <TableRow android:descendantFocusability="blocksDescendants" android:gravity="center" android:background="@color/yellow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+    </TableRow>
+    <ImageView android:background="@drawable/repeat_im6" android:layout_width="fill_parent" android:layout_height="2.0dip" android:contentDescription="@null"/>
+    <TableRow android:descendantFocusability="blocksDescendants" android:gravity="center" android:background="@color/yellow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+        <ImageView android:background="@drawable/repeat_im7" android:layout_width="2.0dip" android:layout_height="fill_parent" android:contentDescription="@null"/>
+        <include layout="@layout/constellation_door" />
+    </TableRow>
+</TableLayout>

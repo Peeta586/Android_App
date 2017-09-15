@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_tab_height">45.0dp</dimen>
+    <dimen name="week_tab_height">47.0dp</dimen>
+	<dimen name="y_w_t_h">30dp</dimen>
+	<dimen name="week_y_w_t_h">32dp</dimen>
+	<dimen name="toolbarsize">46.0dp</dimen>
+	<dimen name="toolsize">22.0sp</dimen>
+	<dimen name="calendar_addsch_tx">17.0dip</dimen>
+	<dimen name="calendar_right_size">14.0dip</dimen>
+</resources>

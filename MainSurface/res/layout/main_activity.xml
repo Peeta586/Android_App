@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="match_parent"
+		android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+		<ImageSwitcher android:id="@+id/ImageBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_2"></ImageSwitcher>
+		<View android:id="@+id/bgMask" android:background="#ff000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+		<FrameLayout android:layout_gravity="bottom" android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/main_tab_height">
+		    <LinearLayout android:id="@+id/mainlayout" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"></LinearLayout>
+		</FrameLayout>
+		<TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"></TabWidget>
+		<LinearLayout android:id="@+id/main_menu" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bar_menu_bottom" android:layout_width="match_parent" android:layout_height="@dimen/main_tab_height">
+		    <TextView android:id="@+id/tvCalendar" android:text="@string/tab_calendar" android:drawableTop="@drawable/tab_calendar_selector" style="@style/main_tab_button_style" android:selectAllOnFocus="true"/>
+		    <TextView android:id="@+id/tvWeather" android:text="@string/tab_weather" android:drawableTop="@drawable/tab_weather_selector" style="@style/main_tab_button_style" />
+
+            <TextView android:id="@+id/tvHuangLi" android:text="@string/tab_huli_info" android:drawableTop="@drawable/tab_huli_info_selector" style="@style/main_tab_button_style" />
+
+		    <TextView android:id="@+id/tvSearch" android:visibility="gone" style="@style/main_tab_button_style" android:drawableTop="@drawable/tab_search_selector" android:text="@string/tab_search" />
+
+		    <TextView android:id="@+id/tvMore"  android:text="@string/tab_more" android:drawableTop="@drawable/tab_more_selector" style="@style/main_tab_button_style" />
+
+		</LinearLayout>
+</TabHost>
+

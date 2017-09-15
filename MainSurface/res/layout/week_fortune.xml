@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/cons_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" >
+                <ImageView android:contentDescription="@null" android:id="@id/consIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cons_aquarius" />
+                <ImageView android:contentDescription="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:src="@drawable/cons_divider_vertical" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/cons_font_color1" android:id="@id/consName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="狮子座" />
+                    <TextView android:textColor="@color/cons_font_color1" android:id="@id/consTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7.23-8.22" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/cons_font_color2" android:gravity="center_horizontal" android:id="@+id/cons_time1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                    <TextView android:textColor="@color/cons_font_color2" android:gravity="center_horizontal" android:id="@+id/cons_time2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:gravity="center_vertical" android:orientation="vertical" android:layout_height="0.0dip" android:layout_weight="1.8"  android:baselineAligned="false">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                        <TextView android:textSize="12.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xinyunri" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/luck_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                        <TextView android:textSize="12.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unluck" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/unluck_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:contentDescription="@null" android:background="@drawable/repeat_im6" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zhengtiyunshi" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/all_doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/aiqingyunshi" />
+               
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/haveduixiang" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/have" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/unhaveduixiang" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/unhave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/healthyunshi" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/health" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/workyunshi" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/work_doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/xingyuzhishu" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/xingyu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/xiaotishi" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/tishi_doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="3.0dip" />
+               
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/veil" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_color" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+        <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/net_delay_notify" android:layout_below="@id/progressBar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

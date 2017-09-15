@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"  android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/top_nav_1_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/navbar_style">
+        <Button android:id="@+id/back_mc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_fun_back" style="@style/nav_fun_style" />
+        <TextView android:id="@+id/mc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/app_mc" android:layout_weight="1.0" style="@style/nav_text_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"  android:background="@color/white" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="0dip" android:layout_weight="1.0">
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="@string/strMessage3" style="@style/grey_mid" />
+            <Spinner android:entries="@array/mc_a" android:id="@+id/mc_spinner1" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_weight="1.0" style="@style/dropdown_style" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="@string/strMessage9" style="@style/grey_mid" />
+            <Spinner android:entries="@array/mc_b" android:id="@+id/mc_spinner2" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_weight="1.0" style="@style/dropdown_style" />
+        </TableRow>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/strMessage1" android:layout_alignParentLeft="true" style="@style/grey_mid" />
+                <TextView android:id="@+id/mc_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:singleLine="true" android:inputType="number" android:layout_alignParentRight="true" style="@style/title_big_orange" />
+                <TextView android:id="@+id/separator2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toLeftOf="@id/mc_d" style="@style/title_big_orange" />
+                <TextView android:id="@+id/mc_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:layout_toLeftOf="@id/separator2" style="@style/title_big_orange" />
+                <TextView android:id="@+id/separator1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toLeftOf="@id/mc_m" style="@style/title_big_orange" />
+                <TextView android:id="@+id/mc_y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:layout_toLeftOf="@id/separator1" style="@style/title_big_orange" />
+            </RelativeLayout>
+            <Button android:layout_gravity="right" android:id="@+id/mc_browse" android:layout_width="wrap_content" android:layout_height="44.0dip" android:text="@string/browse" style="@style/button_1_style" />
+        </LinearLayout>
+        <TableRow android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:id="@+id/mc_search" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="5.0dip" android:text="@string/mc_search" android:layout_weight="1.0" style="@style/button_2_style" />
+            <Button android:textSize="16.0sp" android:id="@+id/mc_reset" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="5.0dip" android:text="@string/mc_reset" android:layout_weight="1.0" style="@style/button_1_style" />
+        </TableRow>
+    </LinearLayout>
+    
+</LinearLayout>

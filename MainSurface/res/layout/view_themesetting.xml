@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/layout_title" android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:id="@+id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_fun_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/nav_fun_style" />
+        <TextView android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newtheme_title" android:layout_centerInParent="true" style="@style/nav_text_style" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/btn_theme_localTheme" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:text="@string/newtheme_zidingyi" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_nav_style" />
+    </RelativeLayout>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title" android:background="@color/white">
+    <GridView android:id="@+id/grid_theme" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:numColumns="2" android:fastScrollAlwaysVisible="false" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@+id/layout_loading" android:background="#66000000" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载...." />
+    </LinearLayout>
+</FrameLayout>
+</RelativeLayout>

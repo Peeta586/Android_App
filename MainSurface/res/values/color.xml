@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="white_a5">#aaffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#88000000</color>
+    <color name="grey9">#999999</color>
+    <color name="trans_white">#e5ffffff</color>
+    <color name="trans_black">#22000000</color>
+    <color name="trans_white1">#88ffffff</color>
+    <color name="green">#ff66cc00</color>
+    <color name="light_grey_bg">#ffeeeeee</color>
+    <color name="tool_text_w">#ffffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="cons_bg_color">#fff9f9f5</color>
+    <color name="cons_font_color1">#ff4c4c4c</color>
+    <color name="cons_font_color2">#ffa3cae5</color>
+    <color name="cons_font_color3">#ff1077bc</color>
+    <color name="lightGray">#ff838383</color>
+    <color name="mc_bottom_bg">#ffeaeae5</color>
+    <color name="yellow">#ffe8e8e6</color>
+     
+    <color name="schedule_grey">#ffbebfc3</color>
+    <color name="schedule_white_bg">#fff5f6f8</color>
+    <color name="schedule_add_schline">#ffdddddd</color>
+    <color name="schedule_white_titlename_color">#ff333333</color>
+    <color name="schedule_add_orange">#ffff6b00</color>
+    <color name="schedule_popline_color">#ff646b73</color>
+    <color name="schedule_add_popbg">#ffd9dde0</color>
+    
+    <color name="almanac_text1">#ffb27012</color>
+    <color name="almanac_line">#ffe68600</color>
+    <color name="red">#ffff3300</color>
+    <color name="greyc">#ffcccccc</color>
+    <color name="light_blue">#ff00ffff</color>
+    <color name="schedule_del_red">#ffff8383</color>
+    <color name="songse">#ff663300</color>
+    <color name="songse1">#ff996633</color>
+    <color name="songse2">#ffcc9966</color>
+    <color name="orange">#ffff6600</color>
+</resources>

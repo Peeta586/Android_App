@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="26sp" android:textColor="@color/white" android:text="@string/student_ser"/>
+        <GridView android:id="@+id/student_qu" android:layout_width="match_parent" android:layout_height="0dip" android:layout_weight="1" android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="4">
+            
+        </GridView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="26sp" android:textColor="@color/white" android:text="@string/life_service"/>
+        <GridView android:id="@+id/life_service" android:layout_width="match_parent" android:layout_height="0dip" android:layout_weight="1" android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="4">
+            
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

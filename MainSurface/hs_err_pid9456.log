@@ -1,0 +1,83 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=9456, tid=8288
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00379c00):  JavaThread "Unknown thread" [_thread_in_vm, id=8288, stack(0x00310000,0x00360000)]
+
+Stack: [0x00310000,0x00360000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00379c00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8288, stack(0x00310000,0x00360000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Program Files\Java\jre6\bin\javaw.exe
+0x76e10000 - 0x76f4c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x75620000 - 0x756f4000 	C:\Windows\system32\kernel32.dll
+0x750f0000 - 0x7513b000 	C:\Windows\system32\KERNELBASE.dll
+0x75c30000 - 0x75cd0000 	C:\Windows\system32\ADVAPI32.dll
+0x758e0000 - 0x7598c000 	C:\Windows\system32\msvcrt.dll
+0x75b40000 - 0x75b59000 	C:\Windows\SYSTEM32\sechost.dll
+0x75300000 - 0x753a2000 	C:\Windows\system32\RPCRT4.dll
+0x75b60000 - 0x75c29000 	C:\Windows\system32\USER32.dll
+0x75a60000 - 0x75aae000 	C:\Windows\system32\GDI32.dll
+0x76f50000 - 0x76f5a000 	C:\Windows\system32\LPK.dll
+0x75cd0000 - 0x75d6d000 	C:\Windows\system32\USP10.dll
+0x758c0000 - 0x758df000 	C:\Windows\system32\IMM32.DLL
+0x76f70000 - 0x7703c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da56000 	D:\Program Files\Java\jre6\bin\client\jvm.dll
+0x72c50000 - 0x72c82000 	C:\Windows\system32\WINMM.dll
+0x74d60000 - 0x74dac000 	C:\Windows\system32\apphelp.dll
+0x6d280000 - 0x6d288000 	D:\Program Files\Java\jre6\bin\hpi.dll
+0x75a50000 - 0x75a55000 	C:\Windows\system32\PSAPI.DLL
+0x6d7b0000 - 0x6d7bc000 	D:\Program Files\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	D:\Program Files\Java\jre6\bin\java.dll
+0x6d7f0000 - 0x6d7ff000 	D:\Program Files\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:F:\可运行的android开发软件adt-bundle-windows-x86-20131030\sdk\platforms\android-16\android.jar 
+java_command: com.example.Test.MyTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;JAVA_HOME\lib\dt.jar;JAVA_HOME\lib\tools.jar;JAVA_HOME\lib\htmlconverter.jar
+PATH=D:/Program Files/Java/jre6/bin/client;D:/Program Files/Java/jre6/bin;D:/Program Files/Java/jre6/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Windows7Master;D:\Program Files\Java\jdk1.6.0_10\bin;F:\可运行的android开发软件adt-bundle-windows-x86-20131030\sdk\platform-tools;F:\A\AA;D:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;D:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;D:\Program Files\Microsoft Visual Studio\Common\Tools;D:\Program Files\Microsoft Visual Studio\VC98\bin;D:\Program Files\Microsoft Visual Studio 8\VC\bin;D:\Program Files\Java\jdk1.6.0_10\bin;F:\可运行的android开发软件adt-bundle-windows-x86-20131030\sdk\platform-tools;;F:\可运行的android开发软件adt-bundle-windows-x86-20131030\eclipse;
+USERNAME=LSHM
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 7 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 2094044k(575408k free), swap 4188088k(1527744k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-rc2-b32), built on Sep 12 2008 00:52:11 by "java_re" with MS VC++ 7.1
+
+time: Tue May 13 23:41:51 2014
+elapsed time: 0 seconds
+

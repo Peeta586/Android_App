@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="44.0dip" android:background="@color/songse2">
+        <Button android:id="@id/btn_backupAndRecovery_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_fun_back" android:layout_alignParentLeft="true" style="@style/nav_fun_style" />
+        <TextView  android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/alarmsetting_setting_preview" android:layout_centerInParent="true" style="@style/nav_text_style" />
+        <Button android:gravity="center" android:id="@+id/restorebtn" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="5.0dip" android:text="@string/recovery" android:layout_alignParentRight="true" style="@style/button_nav_style" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/restore_tv_content" android:background="@color/trans_white" android:padding="5.0dip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ListView android:id="@+id/lv_backUpData" android:background="@color/trans_white" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

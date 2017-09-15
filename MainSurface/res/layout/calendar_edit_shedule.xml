@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:layout_gravity="center" android:background="@drawable/bg_3" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/edit_sch_mainlayout">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/toolbarsize">
+        <Button android:id="@+id/sch_edit_back" style="@style/backButton" />
+        <TextView android:layout_gravity="center" android:id="@id/schTitle" android:text="@string/schedule_view" style="@style/titleText_w" />
+        <Button android:id="@+id/sch_edit" style="@style/editButton" />
+        <Button android:id="@+id/sch_edit_finish" android:visibility="gone" style="@style/finishButton" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_marginTop="1.0dip" style="@style/edit_white_style_bk">
+        <View android:id="@+id/upline" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/EditScheduleLine" />
+        <RelativeLayout android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@null">
+            <CheckBox android:id="@+id/schcb" android:padding="70.0dip" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" style="@style/Schedulecheckbox" />
+            <EditText android:enabled="false" android:textSize="18.0dip" android:textColorHint="@color/schedule_grey" android:gravity="top|left|center" android:id="@id/addschedittext" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/schcb" android:lineSpacingExtra="5.0dip" style="@style/EditScheduleEditContent" />
+        </RelativeLayout>
+        <View android:id="@+id/downline" android:layout_width="fill_parent" android:layout_height="0.5dip" style="@style/EditScheduleLine" />
+        <RelativeLayout android:id="@id/timerl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/calendar_addsch_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/add_tasktime" android:drawablePadding="5.0dip" style="@style/addScheduleAddTime" />
+            <TextView android:textSize="@dimen/calendar_right_size" android:id="@id/timeTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/open1" android:layout_alignParentRight="true" style="@style/addScheduleTx" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="80.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" style="@style/dottedLine" />
+        <RelativeLayout android:id="@id/remindrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/calendar_addsch_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/add_taskremind" android:drawablePadding="5.0dip" style="@style/scheduleremind" />
+            <TextView android:textSize="@dimen/calendar_right_size" android:id="@id/remindTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/open2" android:layout_alignParentRight="true" style="@style/addScheduleTx" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="80.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" style="@style/dottedLine" />
+        <RelativeLayout android:id="@id/repeatrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/calendar_addsch_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/add_taskrepeat" android:drawablePadding="5.0dip" style="@style/schedulerepeat" />
+            <TextView android:textSize="@dimen/calendar_right_size" android:id="@id/repeatTx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/open3" android:layout_alignParentRight="true" style="@style/addScheduleTx" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="80.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" style="@style/dottedLine" />
+        <RelativeLayout android:id="@+id/deleterl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/calendar_right_size" android:textColor="@color/schedule_del_red" android:gravity="center" android:id="@+id/deleteTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/delete_sch" android:drawableLeft="@drawable/calendar_del" android:drawablePadding="10.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

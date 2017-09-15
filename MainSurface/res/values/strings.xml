@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MainSurface</string>
+    <string name="action_settings">Settings</string>
+    <string name="prov_str">省份列表</string>
+    <string name="city_str">城市列表</string>
+    <string name="edit_cityname">请输入城市名称</string>
+    
+    <string name="tab_calendar">万年历</string>
+    <string name="tab_weather">天气</string>
+    <string name="tab_huli_info">黄历</string>
+    <string name="tab_search">查询</string>
+    <string name="tab_more">更多</string>
+	
+    <string name="temprature">温度：</string>
+    <string name="fengli">风力/风向:</string>
+    <string name="shidu">湿度：</string>
+    <string name="ziwaipower">紫外线强度：</string>
+    <string name="kongqiQuality">空气质量：</string>
+    <string name="temperature_str">13℃/8℃</string>
+    <string name="shidu_str">75%</string>
+    <string name="Quality">暂无</string>
+    <string name="fengli_str">东北风3-4级\u0020</string>
+    <string name="future_fengli">未来风力/风向</string>
+    <string name="first_fengli">明天风力/风向:</string>
+    <string name="second_fengli">后天风力/风向:</string>
+    <string name="third_fengli">大后天风力/风向:</string>
+    <string name="weather_today">多云转中转大雨</string>
+    <string name="today_weather_situ">今日天气变化</string>
+    <string name="today_situation">今日天气状况</string>
+    
+    <string name="weather_environment">空气质量指数[AQI]：</string>
+    <string name="noaqidata">没有空气指数数据.</string>
+    
+    <string name="weather_tab_text1">今日预报</string>
+    <string name="weather_tab_text2">未来趋势</string>
+    <string name="weather_tab_text3">空气</string>
+    <string name="weather_tab_text4">生活指数</string>
+    
+    <string name="select_date_title">选择日期</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="finish_text">完成</string>
+    <string name="addsch">添加日程</string>
+    
+    <string name="login_and_regist">注册登录</string>
+    <string name="findpwd">找回密码</string>
+    <string name="relogin_notice">系统检测到您的密码已经改变，请重新输入密码进行登录，很抱歉给您带来不便。</string>
+    <string name="finishRegister">快速注册</string>
+    <string name="login_activity_5">注册</string>
+    <string name="login_activity_6">密 码：</string>
+    <string name="login_activity_8">请输入密码</string>
+   <string name="login_activity_9">请输入帐号或邮箱</string>
+   <string name="login_activity_10">登录</string>
+    <string name="email">帐 号：</string>
+    <string name="loading">正在加载数据...</string>
+     <string name="user_zone">个人中心</string>
+    
+     <string name="sns_share_text">分享</string>
+     
+     <string name="monday">周一</string>
+     <string name="tuesday">周二</string>
+     <string name="wednesday">周三</string>
+     <string name="thursday">周四</string>
+     <string name="friday">周五</string>
+     <string name="saturday">周六</string>
+     <string name="sunday">周日</string>
+     
+     <string name="Monday">星期一</string>
+     <string name="Tuesday">星期二</string>
+     <string name="Wednesday">星期三</string>
+     <string name="Thursday">星期四</string>
+     <string name="Friday">星期五</string>
+     <string name="Saturday">星期六</string>
+     <string name="Sunday">星期日</string>
+     <string name="PreWeek">上一周</string>
+     <string name="NextWeek">下一周</string>
+     <string name="NowWeek">本周</string>
+     
+     <string name="NextDay">后一天</string>
+     <string name="PreDay">前一天</string>
+     <string name="Today">今天</string>
+     <string name="quantian">全天多次</string>
+     <string name="shangwu">上午</string>
+     <string name="lingchen">凌晨</string>
+     <string name="xiawu">下午</string>
+     <string name="night">晚上</string>
+     
+     <string name="PreMonth">上一月</string>
+     <string name="NextMonth">下一月</string>
+     <string name="NowMonth">本月</string>
+     
+     <string name="student_ser">学生社区</string>
+     <string name="life_service">生活服务</string>
+     
+     <string name="Add_Schedule_hint">＋添加新日程...</string>
+     <string name="add_taskrepeat">重复</string>
+     <string name="add_taskremind">提醒</string>
+     <string name="remind_allday">全天</string>
+     <string name="add_tasktime">时间</string>
+     <string name="edit_task">编辑</string>
+     
+     <string name="hint_unlock">向右滑动结束提醒</string>
+     <string name="schedule_view">查看日程</string>
+      <string name="schedule_tod_show">今日日程</string>
+     <string name="delete_sch">删除日程</string>
+     
+     <string name="setting">设置</string>
+     <string name="synchronism_data">同步数据</string>
+     <string name="backup_restore">数据备份与恢复</string>
+     <string name="data_backup">数据备份</string>
+     <string name="data_restore">数据恢复</string>
+     <string name="settings_backupAndRecovery_readme">备份的数据:日程活动，备份文件以txt的形式存放在SD卡/mingli/目录中。\n\n 共有1个txt文件是: \n日程活动文件-Schedule.txt</string>
+     <string name="alarmsetting_setting_preview">预览</string>
+     <string name="recovery">恢复</string>
+     <string name="remind_set">提醒设置</string>
+     <string name="chajian_set">插件设置</string>
+     <string name="tieshi_set">小贴士设置</string>
+     <string name="wannian_set">万年历管理</string>
+     <string name="weather_set">更新天气</string>
+     <string name="bangding">绑定微博</string>
+     <string name="version_upgrade">软件更新</string>
+    <string name="feature_info">关于我们</string>
+    <string name="qq_impression">帮助文档</string>
+    <string name="feedback_suggest">意见反馈</string>
+    <string name="the_lasted_version">已是最新版本</string>
+    
+     <string name="today_fortune">今日运势</string>
+    <string name="tommo_fortune">明日运势</string>
+    <string name="week_fortune">本周运势</string>
+    <string name="supeixingzuo">速配星座:</string>
+    <string name="xinyunshuzi">幸运数字:</string>
+    <string name="xinyunyanse">幸运颜色:</string>
+    <string name="zongheyunshi">综合运势 :</string>
+    <string name="aiqingyunshi">爱情运势 :</string>
+    <string name="gongzuoyunshi">工作运势 :</string>
+    <string name="xinyunri">红心日:</string>
+    <string name="unluck">黑梅日:</string>
+    <string name="xinyunyanseheshuzi">幸运颜色/数字:</string>
+    <string name="haveduixiang">1.有对象:</string>
+    <string name="unhaveduixiang">2.没对象:</string>
+    <string name="zhengtiyunshi">整体运势:</string>
+    <string name="healthyunshi">健康运势:</string>
+    <string name="workyunshi">工作学业运势:</string>
+    <string name="xingyuzhishu">性欲指数:</string>
+    <string name="xiaotishi">本周小提示:</string>
+    <string name="dream">周公解梦</string>
+    <string name="net_delay_notify">让数据飞一会儿</string>
+    
+    <string name="strMessage1">上次月经日期:</string>
+    <string name="strMessage2">预计下次MC日期</string>
+    <string name="strMessage3">平均月经周期(天):</string>
+    <string name="strMessage4">每日提醒时间</string>
+    <string name="strMessage5">距离现在还有</string>
+    <string name="strMessage6">预计下次排卵日</string>
+    <string name="strMessage7">天</string>
+    <string name="strMessage8">超过</string>
+    <string name="strMessage9">平均行经期(天):</string>
+    <string name="strYear">年</string>
+    <string name="strMonth">月</string>
+    <string name="strDate">日</string>
+    <string name="browse">选择日期...</string>
+    <string name="mc_search">查询</string>
+    <string name="mc_reset">重置</string>
+    <string name="mc_test_result">测试结果</string>
+    <string name="mc_safe">安全期</string>
+    <string name="mc_danger">危险期</string>
+    <string name="mc_mc">月经期</string>
+    <string name="app_mc">生理规律</string>
+    <string name="download_time">下载次数:</string>
+    <string name="author">作者:</string>
+    <string name="newtheme_title">主题皮肤</string>
+    <string name="newtheme_zidingyi">自定义</string>
+    
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:contentDescription="@null" android:id="@+id/consIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cons_aquarius" />
+    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/cons_font_color1" android:id="@+id/consName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="白羊座" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/cons_font_color1" android:id="@+id/consTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.21-4.20" />
+</LinearLayout>
